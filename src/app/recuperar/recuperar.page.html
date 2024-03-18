@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Recuperar la cuenta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Usuario</ion-label>
+    <ion-input type="email" [(ngModel)]="usuario" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Año de Naciemiento del Usuario</ion-label>
+    <ion-input type="email" [(ngModel)]="nacimiento" required></ion-input>
+  </ion-item>
+  <ion-button expand="block" (click)="enviarSolicitudRecuperacion()">Enviar solicitud</ion-button>
+
+</ion-content>

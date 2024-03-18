@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Recuperar la contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input type="text" [(ngModel)]="txt_usuario" required></ion-input>
+
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="text" [(ngModel)]="txt_clave" required></ion-input>
+    </ion-item>
+    <ion-button expand="block" (click)="recuperar()">Recuperar Contraseña</ion-button>
+</ion-content>
